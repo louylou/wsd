@@ -1,0 +1,129 @@
+/*########################## MAIN CONTENT ###############################*/
+
+body {
+width: 920px;
+font: normal 1.2em/1.2 "SF Arborcrest Light", Arial, sans-serif;
+margin: 0 auto;
+}
+
+h1, h2 {
+font: bold 2em/0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font-weight: 400;
+text-shadow: 4px 3px 4px #111;
+padding: 20px;
+}
+
+p {
+text-indent: 25px;
+padding: 20px;
+} 
+
+#carBG {
+width: 920px; 
+background-image: url("../images/yellowCar.png"); /* SHORTHAND BGGGGGGGGGGGGGGGGGGG*/
+background-repeat: no-repeat;
+background-position: center top;
+background-attachment: fixed;
+margin: 0; 
+}
+
+/*##################################### NAVIGATION ######################################## */
+
+nav {
+padding-bottom: 40px;
+}
+
+#logo {
+width: 300px;
+height: 60px;
+background-image: url("../images/zoom-logo.gif");
+float: left;
+}
+
+ul {
+width:920px;
+margin: 0 auto;
+background: #000;
+list-style-type: none;
+padding: 0;
+float: right;
+overflow: hidden;
+}
+
+li {
+width: 150px;
+background: #000;
+float: right;
+}
+
+/*################################ LINKS ######################################*/
+
+a {
+text-decoration: none;
+background: #000;
+display: block;
+height: 60px;
+line-height: 60px;
+text-align: center;
+color: #000;
+}
+
+a:link {
+color: #ffea49;
+}
+
+a:visited {
+color: #724c90;
+}
+
+a:hover {
+color: #ffea49;
+background: #fff;
+}
+
+a:active {
+color: gray;
+}
+
+
+img {
+border-width: 15px;
+border-style: solid;
+border-color: #fff;
+border-radius: 10px;
+-moz-box-shadow: 5px 5px 7px #656564;
+-ms-box-shadow: 5px 5px 7px #656564;
+-o-box-shadow: 5px 5px 7px #656564;
+-webkit-box-shadow: 5px 5px 7px #656564;
+box-shadow: 5px 5px 7px #656564;
+padding: 0;
+}
+
+.gallery-list ul {
+width: 750px;
+list-style-type: none;
+margin: 10px auto;
+overflow: hidden;
+padding: 0 20px;
+}
+
+.gallery-list li {
+float: left;
+padding: 10px 15px;
+}
+
+
+/*########################################## FOOTER#########################################*/
+
+footer {
+width: 920px;
+height: 60px;
+background: #000;
+clear: both;
+}
+
+.copyright {
+color: #ffea49;
+text-align: center;
+padding-top: 25px;
+}

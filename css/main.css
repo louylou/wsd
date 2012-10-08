@@ -1,42 +1,43 @@
 /*################################ MAIN CONTENT ###############################*/
 
 body {
-width: 920px;
-font: normal 1.2em/1.2 "SF Arborcrest Light", Arial, sans-serif;
+width: 57.5em; /*920px!!!!!!!!*/
+font: normal 100%/*16px*/ /1.5 "SF Arborcrest Light", Arial, sans-serif;
 margin: 0 auto;
 }
 
 h1 {
-font: bold 2.6em/0.1 "Nothing You Could Do", cursive, Arial, sans-serif;
+font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
 text-shadow: 4px 3px 4px #111;
-padding: 0 20px;
+padding: 0 2.7173913043478%; /* 0 20px/920px*/
 }
 
 h2 {
-font: bold 2em/0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font: bold 1.5em /*24px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
 text-shadow: 4px 3px 4px #111;
 padding-left: 20px;
-padding-top: 20px;
+padding-top: 2.7173913043478%; /* 20px/920px */
 }
 
 h3 {
-font: bold 1.5em/0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font: bold 1.3125em /*21px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
 text-shadow: 4px 3px 4px #111;
 }
 
 p {
-text-indent: 25px;
+text-indent: 2.717391304348%; /*25px/920px*/
 padding: 0 20px;
 } 
 
 
 #carBG {     /* YELLOW CAR BACKGROUND IMAGE*/
-width: 920px; 
+width: 100%; /*920px*/
+overflow: hidden;
 background: url("../images/yellowCar.png") no-repeat fixed center top; 
-margin: 0; 
+margin: 0 auto; 
 }
 
 
@@ -46,8 +47,8 @@ padding-bottom: 40px;
 }
 
 #logo {
-width: 300px;
-height: 60px;
+width:32.608695652174%; /*300px/920px*/
+height: 3.75em; /*60px/16pt*/
 background-image: url("../images/zoom-logo.gif");
 float: left;
 }
@@ -59,7 +60,6 @@ background: #000;
 list-style-type: none;
 padding: 0;
 float: right;
-overflow: hidden;
 }
 
 nav ul li {
@@ -101,8 +101,9 @@ color: gray;
 /*############################################## HOME PAGE ###############################*/
 
 .ferrari_pic_main{
+width:43.478260869565%; /*400px/920px*/
 float: left;
-margin: 0 20px;
+margin: 0 2.7173913043478%; /* 0 20px/920px*/
 border-width: 15px;        
 border-style: solid;
 border-color: #fff;
@@ -112,6 +113,10 @@ border-radius: 10px;
 -o-box-shadow: 5px 5px 7px #656564;
 -webkit-box-shadow: 5px 5px 7px #656564;
 box-shadow: 5px 5px 7px #656564;
+}
+
+.home-intro p{
+width: 45.652173913043%; /*420px;*/
 }
 
 
@@ -131,22 +136,18 @@ margin: 0 auto;
 -webkit-column-count: 3;
 -o-column-count: 3;
 -ms-column-count: 3;
--moz-column-gap: 20px;
--o-column-gap: 20px;
--ms-column-gap: 20px;
--webkit-column-gap: 20px;
+-moz-column-gap: 10px;
+-o-column-gap: 10px;
+-ms-column-gap: 10px;
+-webkit-column-gap: 10px;
 padding: 0 20px;
 }
 
 .about h1 {
-font: bold 2.6em/0.1 "Nothing You Could Do", cursive, Arial, sans-serif;
+font: bold 1.875em/0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
 text-shadow: 4px 3px 4px #111;
 padding: 20px 20px 0;
-}
-
-.about p {       
-text-indent: 25px;
 }
 
 .about img {                 
@@ -242,18 +243,23 @@ margin: 0 auto;
 
 /* ############################################## GALLERY PAGE ########################### */
 
+.gallery-list h1 {
+font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font-weight: 400;
+text-shadow: 4px 3px 4px #111;
+padding: 2.7173913043478% 0 0 2.7173913043478%; /* 20px/920px */
+}
+
 .gallery-list ul {
-width: 500px;
+width: 54.347826086957%; /*500px/920px*/
 list-style-type: none;
-margin: 0 auto;
 float: left;
-overflow: hidden;
 }
 
 .gallery-list li {
-width: 230px;
+width: 20.652173913043%; /*190px/920px*/
 float: left;
-margin-left: 15px;
+margin-left: 1.630434782609%; /* 15px;/920px*/
 }
 
 
@@ -270,7 +276,7 @@ box-shadow: 5px 5px 7px #656564;
 }
 
 .gallery-list p {
-width:300px;
+width:32.608695652174%; /*300px;*/
 float: left;
 margin: 0 auto;
 }
@@ -279,8 +285,8 @@ margin: 0 auto;
 /*################################################# FOOTER##############################*/
 
 footer {
-width: 920px;
-height: 60px;
+width: 57.5em; /* 920px */
+height: 3.75em; /* 60px */
 background: #000;
 clear: both;
 }
@@ -288,5 +294,5 @@ clear: both;
 .copyright {
 color: #ffea49;
 text-align: center;
-padding-top: 25px;
+padding-top: 2.717391304348%; /* 25px*/
 }

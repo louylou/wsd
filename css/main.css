@@ -1,35 +1,36 @@
 /*################################ MAIN CONTENT ###############################*/
 
 body {
-width: 57.5em; /*920px!!!!!!!!*/
-font: normal 100%/*16px*/ /1.5 "SF Arborcrest Light", Arial, sans-serif;
+width: 920px;
+font: normal 100%/1.5 "SF Arborcrest Light", Arial, sans-serif; /*100% = 16pt*/
+max-width: 920px;
 margin: 0 auto;
 }
 
 h1 {
 font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 4px 3px 4px #111;
-padding: 0 2.7173913043478%; /* 0 20px/920px*/
+text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
+/*padding: 0 2.7173913043478%; /* 0 20px/920px*/
 }
 
 h2 {
 font: bold 1.5em /*24px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 4px 3px 4px #111;
-padding-left: 20px;
-padding-top: 2.7173913043478%; /* 20px/920px */
+text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
+padding-left: 2.7173913043478%; /* 20px/920px*/
+/*padding-top: 2.7173913043478%; /* 20px/920px */*/
 }
 
 h3 {
 font: bold 1.3125em /*21px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 4px 3px 4px #111;
+text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
 }
 
 p {
-text-indent: 2.717391304348%; /*25px/920px*/
-padding: 0 20px;
+text-indent: 1.5625em; /*25px/16px*/
+padding:0 2.173913043478%; /* 0 20px;/920px*/
 } 
 
 
@@ -40,35 +41,35 @@ background: url("../images/yellowCar.png") no-repeat fixed center top;
 margin: 0 auto; 
 }
 
-
 /*########################################## NAVIGATION ############################ */
 nav {
-padding-bottom: 40px;
+height: 6.521739130435%; /* 60px/920px */
+background: #000;
+padding: 0;
 }
 
 #logo {
-width:32.608695652174%; /*300px/920px*/
-height: 3.75em; /*60px/16pt*/
+width: 51.086956521739%; /*470px/920px*/
+height: 60px;
 background-image: url("../images/zoom-logo.gif");
 float: left;
 }
 
 nav ul {
-width:920px;
-margin: 0 auto;
 background: #000;
-list-style-type: none;
+margin: 0 auto;
 padding: 0;
-float: right;
 }
 
 nav ul li {
-width: 150px;
+width: 16.304347826087%; /*150px/920px*/
 background: #000;
 float: right;
+list-style-type: none;
 }
 
-/*########################################### NAV LINKS #################################*/
+
+/* ######################################### NAVIGATION LINKS ################################# */
 
 nav ul a {
 text-decoration: none;
@@ -115,7 +116,7 @@ border-radius: 10px;
 box-shadow: 5px 5px 7px #656564;
 }
 
-.home-intro p{
+.home-intro p{     /*??????????????*/
 width: 45.652173913043%; /*420px;*/
 }
 
@@ -136,21 +137,21 @@ margin: 0 auto;
 -webkit-column-count: 3;
 -o-column-count: 3;
 -ms-column-count: 3;
--moz-column-gap: 10px;
--o-column-gap: 10px;
--ms-column-gap: 10px;
--webkit-column-gap: 10px;
-padding: 0 20px;
+-moz-column-gap: 0.625em; /*10px/16px*/
+-o-column-gap: 0.625em; /*10px/16px*/
+-ms-column-gap: 0.625em; /*10px/16px*/
+-webkit-column-gap: 0.625em; /*10px/16px*/
+padding: 0 2.173913043478%; /* 0 20px/920px */
 }
 
 .about h1 {
 font: bold 1.875em/0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 4px 3px 4px #111;
-padding: 20px 20px 0;
+text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
 }
 
-.about img {                 
+.about img {
+opacity: 0.8;         /* ONLY opacity element */        
 border-width: 15px;        
 border-style: solid;
 border-color: #fff;
@@ -167,10 +168,10 @@ box-shadow: 5px 5px 7px #656564;
  /* ######################################### ABOUT US ARTICLE element #########################*/
 
 .press-title {          
-width: 600px;
+width: 65.217391304348%; /*600px/920px*/
 background: RGBA(255, 255, 255, 0.6);
 border-radius: 10px;
-padding: 5px 20px;
+padding: 0.833333333333% 3.333333333333%; /*5px 20px/600px*/
 margin: 0 auto;
 }
 
@@ -191,18 +192,18 @@ text-align: center;
 
 ol {
 color: #fff;
-width: 90px;
+width: 9.782608695652%; /*90px/920 */
 background: RGBA(255, 255, 255, 0.6);
 border-radius: 10px;
-padding: 5px 20px;
+padding: 5.555555555556%; /*5px/90 */
 margin: 0 auto;
 }
 
 ol li {
-width: 150px;
+width: 15px;
 list-style-image: url("../images/tire.png");
 color: #000;
-margin: 0 20px;
+margin: 0 auto;
 }
 
 ol a {
@@ -230,10 +231,10 @@ color: gray;
   /* ####################################### ABOUT US ~FORM & BENEFITS ##########################*/
 
 .form p{
-width: 600px;
+width:65.217391304348%; /*600px/920px*/
 background: RGBA(255, 255, 255, 0.6);
 border-radius: 10px;
-padding: 5px 20px;
+padding: 0.833333333333% 3.333333333333%; /*5px 20px/600px*/
 margin: 0 auto;
 }
 
@@ -243,31 +244,30 @@ margin: 0 auto;
 
 /* ############################################## GALLERY PAGE ########################### */
 
+.gallery-list {
+height: 500px; /*remove when you add more content to the page */
+}
+
 .gallery-list h1 {
 font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 4px 3px 4px #111;
+text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
 padding: 2.7173913043478% 0 0 2.7173913043478%; /* 20px/920px */
 }
 
 .gallery-list ul {
-width: 54.347826086957%; /*500px/920px*/
+width: 59.782608695652%; /*550px/920px*/
 list-style-type: none;
-float: left;
 }
-
-.gallery-list li {
-width: 20.652173913043%; /*190px/920px*/
-float: left;
-margin-left: 1.630434782609%; /* 15px;/920px*/
-}
-
 
 .gallery-list img {
 border-width: 15px;        
 border-style: solid;
 border-color: #fff;
 border-radius: 10px;
+float: left;
+margin-right: 1.086956521739%; /*10px/920px*/
+margin-bottom: 1.086956521739%; /*10px/920px*/
 -moz-box-shadow: 5px 5px 7px #656564;
 -ms-box-shadow: 5px 5px 7px #656564;
 -o-box-shadow: 5px 5px 7px #656564;
@@ -276,17 +276,15 @@ box-shadow: 5px 5px 7px #656564;
 }
 
 .gallery-list p {
-width:32.608695652174%; /*300px;*/
 float: left;
-margin: 0 auto;
 }
 
 
-/*################################################# FOOTER##############################*/
+/*################################################# FOOTER ##############################*/
 
 footer {
-width: 57.5em; /* 920px */
-height: 3.75em; /* 60px */
+width: 100%; /* 920px */
+height: 60px;
 background: #000;
 clear: both;
 }
@@ -294,5 +292,5 @@ clear: both;
 .copyright {
 color: #ffea49;
 text-align: center;
-padding-top: 2.717391304348%; /* 25px*/
+padding-top: 2.717391304348%; /* 25px */
 }

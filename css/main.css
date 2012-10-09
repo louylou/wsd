@@ -10,26 +10,24 @@ margin: 0 auto;
 h1 {
 font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
-/*padding: 0 2.7173913043478%; /* 0 20px/920px*/
+text-shadow: 4px 3px 4px #111;
+padding-left: 2.7173913043478%; /* 0 20px/920px*/
 }
 
 h2 {
 font: bold 1.5em /*24px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
 padding-left: 2.7173913043478%; /* 20px/920px*/
-/*padding-top: 2.7173913043478%; /* 20px/920px */*/
+padding-left: 2.7173913043478%; /* 20px/920px */
 }
 
 h3 {
 font: bold 1.3125em /*21px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
 }
 
 p {
-text-indent: 1.5625em; /*25px/16px*/
+text-indent: 25px;
 padding:0 2.173913043478%; /* 0 20px;/920px*/
 } 
 
@@ -43,7 +41,7 @@ margin: 0 auto;
 
 /*########################################## NAVIGATION ############################ */
 nav {
-height: 6.521739130435%; /* 60px/920px */
+height: 60px;
 background: #000;
 padding: 0;
 }
@@ -63,8 +61,7 @@ padding: 0;
 
 nav ul li {
 width: 16.304347826087%; /*150px/920px*/
-background: #000;
-float: right;
+float: left;
 list-style-type: none;
 }
 
@@ -91,7 +88,7 @@ color: #724c90;
 
 a:hover {
 color: #ffea49;
-background: #fff;
+background: #119bcf;
 }
 
 a:active {
@@ -101,10 +98,14 @@ color: gray;
 
 /*############################################## HOME PAGE ###############################*/
 
-.ferrari_pic_main{
-width:43.478260869565%; /*400px/920px*/
+.home-intro {
+/*width: 54.347826086957%; /*500/920px*/
 float: left;
+}
+
+.home-photo img{
 margin: 0 2.7173913043478%; /* 0 20px/920px*/
+float: left;
 border-width: 15px;        
 border-style: solid;
 border-color: #fff;
@@ -113,20 +114,21 @@ border-radius: 10px;
 -ms-box-shadow: 5px 5px 7px #656564;
 -o-box-shadow: 5px 5px 7px #656564;
 -webkit-box-shadow: 5px 5px 7px #656564;
-box-shadow: 5px 5px 7px #656564;
+box-shadow: 5px 5px 7px #656564; 
 }
 
-.home-intro p{     /*??????????????*/
-width: 45.652173913043%; /*420px;*/
+.home-intro-p {     /*??????????????*/
+/*width: 43.478260869565%; /*400px/920px*/
+float: left;
+margin-left: 2.7173913043478%; /* 20px/920px*/
 }
-
 
 .sign-up-button {
-width: 200px;
+width: 21.739130434783%; /*200px/920*/
 height: 60px;
 background: url("../images/sign-up-button.gif");
 background-position: no-repeat;
-margin: 0 auto;
+margin-left: 65.217391304348%; /*600px/920px*/
 }
 
 
@@ -137,18 +139,18 @@ margin: 0 auto;
 -webkit-column-count: 3;
 -o-column-count: 3;
 -ms-column-count: 3;
--moz-column-gap: 0.625em; /*10px/16px*/
--o-column-gap: 0.625em; /*10px/16px*/
--ms-column-gap: 0.625em; /*10px/16px*/
--webkit-column-gap: 0.625em; /*10px/16px*/
+-moz-column-gap: 1.086956521739%; /*10px/920px*/
+-o-column-gap: 1.086956521739%; /*10px/920px*/
+-ms-column-gap: 1.086956521739%; /*10px/920px*/
+-webkit-column-gap: 1.086956521739%; /*10px/920px*/
 padding: 0 2.173913043478%; /* 0 20px/920px */
 }
 
 .about h1 {
-font: bold 1.875em/0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
 }
+ 
 
 .about img {
 opacity: 0.8;         /* ONLY opacity element */        
@@ -171,7 +173,7 @@ box-shadow: 5px 5px 7px #656564;
 width: 65.217391304348%; /*600px/920px*/
 background: RGBA(255, 255, 255, 0.6);
 border-radius: 10px;
-padding: 0.833333333333% 3.333333333333%; /*5px 20px/600px*/
+padding: 10px 3.333333333333%; /*10px 20px/600px*/
 margin: 0 auto;
 }
 
@@ -186,7 +188,7 @@ color: #119bcf;
 
   /* ####################################### ABOUT US ASIDE element ##########################*/
 
-.news_links p{
+.news_links p {
 text-align: center;
 }
 
@@ -195,12 +197,12 @@ color: #fff;
 width: 9.782608695652%; /*90px/920 */
 background: RGBA(255, 255, 255, 0.6);
 border-radius: 10px;
-padding: 5.555555555556%; /*5px/90 */
+padding: 20px 5.555555555556%; /*5px/90 */
 margin: 0 auto;
 }
 
 ol li {
-width: 15px;
+width: 16.666666666667%; /*15px/90px*/
 list-style-image: url("../images/tire.png");
 color: #000;
 margin: 0 auto;
@@ -234,7 +236,7 @@ color: gray;
 width:65.217391304348%; /*600px/920px*/
 background: RGBA(255, 255, 255, 0.6);
 border-radius: 10px;
-padding: 0.833333333333% 3.333333333333%; /*5px 20px/600px*/
+padding: 20px 3.333333333333%; /* 20px/600px*/
 margin: 0 auto;
 }
 
@@ -251,13 +253,13 @@ height: 500px; /*remove when you add more content to the page */
 .gallery-list h1 {
 font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
-text-shadow: 0.25em 0.1875em 0.25em #111; /*4px 3px 4px #111/16px */
-padding: 2.7173913043478% 0 0 2.7173913043478%; /* 20px/920px */
+text-shadow: 4px 3px 4px #111;
 }
 
 .gallery-list ul {
 width: 59.782608695652%; /*550px/920px*/
 list-style-type: none;
+padding: 0 2.727272727273%; /*15px/550px */
 }
 
 .gallery-list img {
@@ -267,7 +269,7 @@ border-color: #fff;
 border-radius: 10px;
 float: left;
 margin-right: 1.086956521739%; /*10px/920px*/
-margin-bottom: 1.086956521739%; /*10px/920px*/
+margin-bottom: 10px;
 -moz-box-shadow: 5px 5px 7px #656564;
 -ms-box-shadow: 5px 5px 7px #656564;
 -o-box-shadow: 5px 5px 7px #656564;
@@ -276,7 +278,9 @@ box-shadow: 5px 5px 7px #656564;
 }
 
 .gallery-list p {
+width: 42.934782608696%; /*395px/920*/ /*doesnt seem to be needed*/
 float: left;
+margin-left: 5.063291139241%; /*20px/395*/ /*doesnt seem to be needed*/
 }
 
 
@@ -292,5 +296,29 @@ clear: both;
 .copyright {
 color: #ffea49;
 text-align: center;
-padding-top: 2.717391304348%; /* 25px */
+padding-top: 18px;
 }
+
+@media screen and (min-width:719px) and (max-width: 919px){
+#carBG {
+background-image: none;
+background-color: blue; /* removed when finished*/
+}
+}/* end of media 719*/
+
+@media screen and (min-width:480px) and (max-width: 718px){
+#carBG {
+background-image: none;
+background-color: green; /* use #ffea49; */
+}
+}/* end of media 480*/
+
+@media screen and (max-width: 479px){
+#carBG {
+background-image: none;
+background-color: red; /* use #ffea49; */
+}
+.home-photo {display: none;}
+.about-intro {column-count: none;}
+
+} /* end of media 479*/

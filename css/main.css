@@ -7,9 +7,6 @@ max-width: 920px;
 margin: 0 auto;
 }
 
-article, aside, footer, header, nav, section { 
-    display: block;
-}
 
 h1 {
 font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;

@@ -1,4 +1,4 @@
-/*################################ MAIN CONTENT ###############################*/
+/*------------------------------------ MAIN CONTENT------------------------------------*/
 
 body {
 width: 920px;
@@ -43,7 +43,7 @@ background: url("../images/yellowCar.png") no-repeat fixed center top;
 margin: 0 auto; 
 }
 
-/*########################################## NAVIGATION ############################ */
+/*------------------------------------ NAVIGATION ------------------------------------ */
 nav {
 height: 60px;
 background: #000;
@@ -53,7 +53,7 @@ padding: 0;
 #logo {
 width: 51.086956521739%; /*470px/920px*/
 height: 60px;
-background-image: url("../images/zoom-logo.gif");
+background-image: url("../images/zoom_logo.gif");
 float: left;
 }
 
@@ -70,7 +70,7 @@ list-style-type: none;
 }
 
 
-/* ######################################### NAVIGATION LINKS ################################# */
+/*------------------------------------ NAVIGATION LINKS ------------------------------- */
 
 nav ul a {
 text-decoration: none;
@@ -83,7 +83,7 @@ color: #000;
 }
 
 a:link {
-color: #ffea49;
+color: #119bcf;
 }
 
 a:visited {
@@ -100,15 +100,12 @@ color: gray;
 }
 
 
-/*############################################## HOME PAGE ###############################*/
+/*------------------------------------HOME PAGE ------------------------------------*/
 
-.home-page {
-Width: 54.347826086957%; /*500px/920*/
+.home_photo {
+max-width: 100%;
+margin-left: 5%;
 float: left;
-margin: 0 2.173913043478%; /*20px/920*/
-}
-
-.home-page-photo {
 border-width: 15px;        
 border-style: solid;
 border-color: #fff;
@@ -120,12 +117,12 @@ border-radius: 10px;
 box-shadow: 5px 5px 7px #656564; 
 }
 
-.home-page-p {
+.home_page_p {
 width: 38.04347826087%; /*350px/920*/
 float: right;
 }
 
-.sign-up-button {
+.sign_up_button {
 width: 57.142857142857%; /*200px/350*/
 height: 60px;
 background-image: url("../images/sign-up-button.gif");
@@ -134,9 +131,9 @@ margin-left: 20%; /*70px/350*/
 margin-bottom: 5.714285714286%; /*20px/350*/
 }
 
-/*########################################### ABOUT US ELEMENTS ###########################*/
+/*---------------------------------------ABOUT US ELEMENTS------------------------------------*/
 
-.about-intro {            
+.about_intro {            
 -moz-column-count: 3;
 -webkit-column-count: 3;
 -o-column-count: 3;
@@ -153,8 +150,8 @@ font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sa
 font-weight: 400;
 }
  
-
-.about-intro img{
+.about_intro img{
+max-width: 100%;
 opacity: 0.8;         /* ONLY opacity element */        
 border-width: 15px;        
 border-style: solid;
@@ -169,11 +166,8 @@ margin: 0;
 box-shadow: 5px 5px 7px #656564;
 }
 
-/*.jones-photo img {
-max-width: 100%;
-}*/
 
- /* ######################################### ABOUT US ARTICLE element #########################*/
+ /* ------------------------------------ABOUT US ARTICLE element ---------------------------------*/
 
 .press-title {          
 width: 65.217391304348%; /*600px/920px*/
@@ -192,7 +186,7 @@ color: #119bcf;
 }
 
 
-  /* ####################################### ABOUT US ASIDE element ##########################*/
+  /*------------------------------------ABOUT US ASIDE element------------------------------------*/
 
 .news_links p {
 text-align: center;
@@ -236,7 +230,7 @@ color: gray;
 }
 
 
-  /* ####################################### ABOUT US ~FORM & BENEFITS ##########################*/
+  /*------------------------------------ABOUT US ~FORM & BENEFITS------------------------------------*/
 
 .form p{
 width:65.217391304348%; /*600px/920px*/
@@ -250,31 +244,31 @@ margin: 0 auto;
 
 
 
-/* ############################################## GALLERY PAGE ########################### */
+/* ------------------------------------ GALLERY PAGE ------------------------------------*/
 
-.gallery-list {
-height: 500px; /*remove when you add more content to the page */
-}
-
-.gallery-list h1 {
+.gallery_list h1 {
 font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
 text-shadow: 4px 3px 4px #111;
 }
 
-.gallery-list ul {
-width: 59.782608695652%; /*550px/920px*/
+.gallery_list ul {
+width: 54.347826086957%; /*500px/920px*/
 list-style-type: none;
-padding: 0 2.727272727273%; /*15px/550px */
+float: left;
+overflow: hidden;
+}
+.gallery_list li {
+width: 48%; /*240px/500*/ 
+float: left;
 }
 
-.gallery-list img {
+.gallery_list img {
+max-width: 100%;
 border-width: 15px;        
 border-style: solid;
 border-color: #fff;
 border-radius: 10px;
-float: left;
-margin-right: 1.086956521739%; /*10px/920px*/
 margin-bottom: 10px;
 -moz-box-shadow: 5px 5px 7px #656564;
 -ms-box-shadow: 5px 5px 7px #656564;
@@ -283,14 +277,13 @@ margin-bottom: 10px;
 box-shadow: 5px 5px 7px #656564;
 }
 
-.gallery-list p {
-width: 42.934782608696%; /*395px/920*/ /*doesnt seem to be needed*/
+.gallery_p {
+width: 32.60869552174%;/*300px/920*/ 
 float: left;
-margin-left: 5.063291139241%; /*20px/395*/ /*doesnt seem to be needed*/
 }
 
 
-/*################################################# FOOTER ##############################*/
+/*--------------------------------------- FOOTER ------------------------------------*/
 
 footer {
 width: 100%; /* 920px */
@@ -312,17 +305,15 @@ padding-top: 18px;
 
 #carBG {
 width: 95%;
-background-image: none;
-background-color: blue; /* removed when finished*/
 margin: 0;
 }
-.home-page, .home-page-photo {
-Width: 65%;
+.home_photo {
+Height: 20%;
+Width: 40%;
 }
-.home-page-p {
+.home_page_p {
 width: 50%;
 }
-
 }/* end of media 719*/
 
 /*-------------------------------------- 2nd media ------------------------------*/
@@ -337,32 +328,28 @@ margin: 0;
 #header {
 height: auto;
 }
-.home-page-p {
+.home_page_p {
 width: 70%;
 float: none;
 clear: both;
 margin-left: 15%;
 }
-.home-page-photo {
-width: 80%;
+.home_photo {
+width: 40%;
 margin-bottom: 30px;
-margin-left: 40%;
-}
-.home-page h2 {
-margin-left: 25%;
-}
-/*.about-intro {
-width: 90%;
+margin-left: 27%;
 }
 
-/*.about-intro img { /* fix imagesssss*/
-/*width: 80%;*/
+.about_intro img{
+width: 70%;
 }
-
-/*.gallery-list p {
+.press-title {
 width: 50%;
-float: none;
-}*/
+}
+
+.gallery_list img {
+width: 75%;
+}
 
 }/* end of media 480*/
 
@@ -377,22 +364,58 @@ background-image: none;
 background-color: #ffea49;
 margin: 0;
 }
- /*#media-home, #media-about, #media-gallery  {
-width: 33.3333333333333%;
-margin-bottom: 20px;
-}*/
 
 #logo {
 width: 100%;
+background-repeat: no-repeat;
 }
-.home-page-photo {
-display: none;
+
+#media_home, #media_about, #media_gallery  {
+width: 33.3333333333333%;
+margin-bottom: 20px;
 }
-.home-page-p {
+
+.home_photo {
+width: 40%;
+margin-left: 25%;
+margin-bottom: 20px;
+
+}
+
+.home_page_p {
 clear: both;
 width: 90%;
 float: none;
 margin-left: 7%;
+}
+
+.car_week {
+margin-left: 7%;
+}
+
+.about {
+margin:0 5%;
+}
+
+.about_intro img {
+display: none;
+}
+
+.jones_quote {
+display: none;
+}
+.about_intro p { /*need code to collapse columns*/
+
+}
+
+.gallery_list img {
+width: 70%;
+}
+.gallery_p {
+clear: both;
+width: 90%;
+float: none;
+margin:0 2%;
 }
 
 } /* end of media 479*/

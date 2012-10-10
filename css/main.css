@@ -7,6 +7,10 @@ max-width: 920px;
 margin: 0 auto;
 }
 
+article, aside, footer, header, nav, section { 
+    display: block;
+}
+
 h1 {
 font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
 font-weight: 400;
@@ -98,14 +102,13 @@ color: gray;
 
 /*############################################## HOME PAGE ###############################*/
 
-.home-intro {
-/*width: 54.347826086957%; /*500/920px*/
+.home-page {
+Width: 54.347826086957%; /*500px/920*/
 float: left;
+margin: 0 2.173913043478%; /*20px/920*/
 }
 
-.home-photo img{
-margin: 0 2.7173913043478%; /* 0 20px/920px*/
-float: left;
+.home-page-photo {
 border-width: 15px;        
 border-style: solid;
 border-color: #fff;
@@ -117,20 +120,19 @@ border-radius: 10px;
 box-shadow: 5px 5px 7px #656564; 
 }
 
-.home-intro-p {     /*??????????????*/
-/*width: 43.478260869565%; /*400px/920px*/
-float: left;
-margin-left: 2.7173913043478%; /* 20px/920px*/
+.home-page-p {
+width: 38.04347826087%; /*350px/920*/
+float: right;
 }
 
 .sign-up-button {
-width: 21.739130434783%; /*200px/920*/
+width: 57.142857142857%; /*200px/350*/
 height: 60px;
-background: url("../images/sign-up-button.gif");
-background-position: no-repeat;
-margin-left: 65.217391304348%; /*600px/920px*/
+background-image: url("../images/sign-up-button.gif");
+background-repeat: no-repeat;
+margin-left: 20%; /*70px/350*/
+margin-bottom: 5.714285714286%; /*20px/350*/
 }
-
 
 /*########################################### ABOUT US ELEMENTS ###########################*/
 
@@ -152,7 +154,7 @@ font-weight: 400;
 }
  
 
-.about img {
+.about-intro img{
 opacity: 0.8;         /* ONLY opacity element */        
 border-width: 15px;        
 border-style: solid;
@@ -166,6 +168,10 @@ margin: 0;
 -webkit-box-shadow: 5px 5px 7px #656564;
 box-shadow: 5px 5px 7px #656564;
 }
+
+/*.jones-photo img {
+max-width: 100%;
+}*/
 
  /* ######################################### ABOUT US ARTICLE element #########################*/
 
@@ -299,26 +305,94 @@ text-align: center;
 padding-top: 18px;
 }
 
+/*---------------------------------------1st media ---------------------------------------------*/
+
+
 @media screen and (min-width:719px) and (max-width: 919px){
+
 #carBG {
+width: 95%;
 background-image: none;
 background-color: blue; /* removed when finished*/
+margin: 0;
 }
+.home-page, .home-page-photo {
+Width: 65%;
+}
+.home-page-p {
+width: 50%;
+}
+
 }/* end of media 719*/
 
+/*-------------------------------------- 2nd media ------------------------------*/
+
 @media screen and (min-width:480px) and (max-width: 718px){
+
 #carBG {
-background-image: none;
-background-color: green; /* use #ffea49; */
+width: 75%;
+margin: 0;
 }
+
+#header {
+height: auto;
+}
+.home-page-p {
+width: 70%;
+float: none;
+clear: both;
+margin-left: 15%;
+}
+.home-page-photo {
+width: 80%;
+margin-bottom: 30px;
+margin-left: 40%;
+}
+.home-page h2 {
+margin-left: 25%;
+}
+/*.about-intro {
+width: 90%;
+}
+
+/*.about-intro img { /* fix imagesssss*/
+/*width: 80%;*/
+}
+
+/*.gallery-list p {
+width: 50%;
+float: none;
+}*/
+
 }/* end of media 480*/
 
+
+/*------------------------------------- 3rd media ------------------------------*/
+
 @media screen and (max-width: 479px){
+
 #carBG {
+width: 50%;
 background-image: none;
-background-color: red; /* use #ffea49; */
+background-color: #ffea49;
+margin: 0;
 }
-.home-photo {display: none;}
-.about-intro {column-count: none;}
+ /*#media-home, #media-about, #media-gallery  {
+width: 33.3333333333333%;
+margin-bottom: 20px;
+}*/
+
+#logo {
+width: 100%;
+}
+.home-page-photo {
+display: none;
+}
+.home-page-p {
+clear: both;
+width: 90%;
+float: none;
+margin-left: 7%;
+}
 
 } /* end of media 479*/

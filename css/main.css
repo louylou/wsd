@@ -1,29 +1,29 @@
 /*------------------------------------ MAIN CONTENT------------------------------------*/
 
 body {
-width: 920px;
-font: normal 100%/1.5 "SF Arborcrest Light", Arial, sans-serif; /*100% = 16pt*/
+width: 920px; /*remove and it will become responsive. Then correct all other widths*/
+font: normal 100%/1.5 "SF Arborcrest Light", arial, sans-serif; /*100% = 16pt*/
 max-width: 920px;
 margin: 0 auto;
 }
 
 
 h1 {
-font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, arial, sans-serif;
 font-weight: 400;
 text-shadow: 4px 3px 4px #111;
 padding-left: 2.7173913043478%; /* 0 20px/920px*/
 }
 
 h2 {
-font: bold 1.5em /*24px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font: bold 1.5em /*24px/16px*/ /0.5 "Nothing You Could Do", cursive, arial, sans-serif;
 font-weight: 400;
 padding-left: 2.7173913043478%; /* 20px/920px*/
 padding-left: 2.7173913043478%; /* 20px/920px */
 }
 
 h3 {
-font: bold 1.3125em /*21px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font: bold 1.3125em /*21px/16px*/ /0.5 "Nothing You Could Do", cursive, arial, sans-serif;
 font-weight: 400;
 }
 
@@ -33,7 +33,7 @@ padding:0 2.173913043478%; /* 0 20px;/920px*/
 } 
 
 
-#carBG {     /* YELLOW CAR BACKGROUND IMAGE*/
+#carbg {     /* YELLOW CAR BACKGROUND IMAGE*/
 width: 100%; /*920px*/
 overflow: hidden;
 background: url("../images/yellowCar.png") no-repeat fixed center top; 
@@ -121,10 +121,10 @@ float: right;
 
 .sign_up_button {
 width: 57.142857142857%; /*200px/350*/
-height: 60px;
+height: 63px;
 background-image: url("../images/sign-up-button.gif");
 background-repeat: no-repeat;
-margin-left: 20%; /*70px/350*/
+margin: 0 20%; /*70px/350*/
 margin-bottom: 5.714285714286%; /*20px/350*/
 }
 
@@ -168,7 +168,7 @@ box-shadow: 5px 5px 7px #656564;
 
 .press-title {          
 width: 65.217391304348%; /*600px/920px*/
-background: RGBA(255, 255, 255, 0.6);
+background-color: rgba(255, 255, 255, 0.6);
 border-radius: 10px;
 padding: 10px 3.333333333333%; /*10px 20px/600px*/
 margin: 0 auto;
@@ -192,7 +192,7 @@ text-align: center;
 ol {
 color: #fff;
 width: 9.782608695652%; /*90px/920 */
-background: RGBA(255, 255, 255, 0.6);
+background-color: rgba(255, 255, 255, 0.6);
 border-radius: 10px;
 padding: 20px 5.555555555556%; /*5px/90 */
 margin: 0 auto;
@@ -229,16 +229,71 @@ color: gray;
 
   /*------------------------------------ABOUT US ~FORM & BENEFITS------------------------------------*/
 
-.form p{
+.form {   /*includes table elements*/
 width:65.217391304348%; /*600px/920px*/
-background: RGBA(255, 255, 255, 0.6);
+background-color: rgba(255, 255, 255, 0.6);
 border-radius: 10px;
 padding: 20px 3.333333333333%; /* 20px/600px*/
-margin: 0 auto;
+margin: 2% auto;
 }
 
-/* will add more content once we work on forms for week 3 */
+table {
+border-collapse: collapse;
+border: 1px solid #999a9a;
+}
 
+th {
+font: bold 1.875em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font-weight: 400;
+background-color: #119bcf;
+color: #ffea49;
+padding: 0.9em 0.4em;
+}
+
+td {
+border: 1px solid #999a9a;
+text-align: center;
+}
+
+.row_highlight {
+background-color: #fdf29f;
+}
+
+form {
+margin-top: 5%;
+}
+
+.form_lists ul{
+list-style-type: none;
+padding-left: 25%;
+}
+
+.form_lists li {
+padding: 4px 2%;
+}
+
+input:focus {
+background: #fdf29f;
+}
+
+/*---------------------------submit button------------*/
+
+button.sumbitbutton {
+background-color: #119bcf;
+color: #ffea49;
+border-color:  #119bcf;
+border-radius: 10px;
+width: 30%;
+height: 40px;
+font: bold 1em /*30px/16px*/ /0.5 "Nothing You Could Do", cursive, Arial, sans-serif;
+font-weight: 400;
+margin-left: 36%;
+}
+
+button.sumbitbutton:hover {
+background-color: #ffea49;
+color: #119bcf;
+}
 
 
 /* ------------------------------------ GALLERY PAGE ------------------------------------*/
@@ -300,7 +355,7 @@ padding-top: 18px;
 
 @media screen and (min-width:719px) and (max-width: 919px){
 
-#carBG {
+#carbg {
 width: 95%;
 margin: 0;
 }
@@ -317,7 +372,7 @@ width: 50%;
 
 @media screen and (min-width:480px) and (max-width: 718px){
 
-#carBG {
+#carbg {
 width: 75%;
 margin: 0;
 }
@@ -355,7 +410,7 @@ width: 75%;
 
 @media screen and (max-width: 479px){
 
-#carBG {
+#carbg {
 width: 50%;
 background-image: none;
 background-color: #ffea49;
@@ -410,6 +465,14 @@ clear: both;
 width: 90%;
 float: none;
 margin:0 2%;
+}
+
+table {
+display: none;
+}
+
+.comments {
+display: none;
 }
 
 } /* end of media 479*/
